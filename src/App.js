@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import BuscarLivros from './components/buscarLivros';
+import CadastrarLivro from './components/cadastrarLivro';
+import { useEffect, useState } from 'react';
 
 function App() {
+  const [data, setData] = useState();
+
+  useEffect(() => {
+    fetch('http://localhost:3333/books')
+      .then((response) => response.json())
+      .then((json) => setData(json))
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="flex">
+      <div className="w-[50%]">
+        <div>
+          <h1>Meus livros</h1>
+        </div>
+        <div>
+          <BuscarLivros data={data} />
+        </div>
+      </div>
+      <div className="w-[50%] h-screen flex items-center justify-center">
+        <CadastrarLivro />
+      </div>
     </div>
   );
 }
