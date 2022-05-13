@@ -23,6 +23,8 @@ function CadastrarLivro() {
     event.target.ano.value = '';
     event.target.genero.value = '';
     event.target.pagina.value = '';
+
+    document.location.reload(true);
   }
 
   return (

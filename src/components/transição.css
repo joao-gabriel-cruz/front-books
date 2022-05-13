@@ -1,0 +1,9 @@
+.show{
+  opacity: 0;
+  visibility: hidden;
+  position: fixed; 
+}
+.marcador{
+  color: #0de02c;
+  text-decoration: underline;
+}
