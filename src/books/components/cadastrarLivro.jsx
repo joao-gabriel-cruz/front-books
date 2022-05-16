@@ -70,10 +70,7 @@ function CadastrarLivro() {
             type="number"
             placeholder="Paginas"
           />
-          <button
-            className="bg-black text-white p-2 rounded-lg hover:bg-[#1c1c1c] ease-in duration-300 "
-            type="submit"
-          >
+          <button className="button " type="submit">
             Cadastrar
           </button>
         </form>

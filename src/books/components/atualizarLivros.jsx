@@ -79,16 +79,10 @@ function AtualizarLivros({ data }) {
           />
         </div>
         <div className="flex justify-center space-x-5">
-          <button
-            onClick={procurarLivro}
-            className="bg-black text-white p-2 rounded-lg hover:bg-[#1c1c1c] ease-in duration-300"
-          >
+          <button onClick={procurarLivro} className="button">
             Buscar
           </button>
-          <button
-            onClick={deletar}
-            className="bg-black text-white p-2 rounded-lg hover:bg-[#1c1c1c] ease-in duration-300"
-          >
+          <button onClick={deletar} className="button">
             deletar
           </button>
         </div>
@@ -138,10 +132,7 @@ function AtualizarLivros({ data }) {
                 type="number"
                 placeholder="Paginas"
               />
-              <button
-                className="bg-black text-white p-2 rounded-lg hover:bg-[#1c1c1c] ease-in duration-300 "
-                type="submit"
-              >
+              <button className="button " type="submit">
                 Atualizar
               </button>
             </form>
