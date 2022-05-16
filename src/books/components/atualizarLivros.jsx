@@ -70,13 +70,10 @@ function AtualizarLivros({ data }) {
     <div>
       <div id="Buscar" className="flex flex-col space-y-2 ">
         <div className="flex flex-col ">
-          <label className="font-bold text-2xl">Atualiza/delete o livro</label>
-          <input
-            id="id"
-            className="bg-[#e3dede] w-[15rem] rounded-lg p-2 "
-            type="text"
-            placeholder="nome do livro"
-          />
+          <label className="font-bold text-[#00b7ff] text-2xl">
+            Atualiza/delete o livro
+          </label>
+          <input id="id" type="text" placeholder="nome do livro" />
         </div>
         <div className="flex justify-center space-x-5">
           <button onClick={procurarLivro} className="button">
@@ -98,40 +95,15 @@ function AtualizarLivros({ data }) {
               className="flex flex-col w-[20rem] space-y-2  rounded-xl"
             >
               <label htmlFor="">Nome do livro:</label>
-              <input
-                id="nome"
-                className="bg-[#e3dede] rounded-lg p-2 "
-                type="text"
-                placeholder="Nome"
-              />
+              <input id="nome" type="text" placeholder="Nome" />
               <label htmlFor="">Escritor do Livro:</label>
-              <input
-                id="escritor"
-                className="bg-[#e3dede] rounded-lg p-2 "
-                type="text"
-                placeholder="Escritor"
-              />
+              <input id="escritor" type="text" placeholder="Escritor" />
               <label htmlFor="">Ano do Livro:</label>
-              <input
-                id="ano"
-                className="bg-[#e3dede] rounded-lg p-2 "
-                type="number"
-                placeholder="Ano"
-              />
+              <input id="ano" type="number" placeholder="Ano" />
               <label htmlFor="">Genero do Livro:</label>
-              <input
-                id="genero"
-                className="bg-[#e3dede] rounded-lg p-2 "
-                type="text"
-                placeholder="Genero"
-              />
+              <input id="genero" type="text" placeholder="Genero" />
               <label htmlFor="">Paginas do Livro:</label>
-              <input
-                id="pagina"
-                className="bg-[#e3dede] rounded-lg p-2 "
-                type="number"
-                placeholder="Paginas"
-              />
+              <input id="pagina" type="number" placeholder="Paginas" />
               <button className="button " type="submit">
                 Atualizar
               </button>

@@ -30,46 +30,31 @@ function CadastrarLivro() {
   return (
     <div className="">
       <div className="flex flex-col text-xl space-y-5 ">
-        <h2 className="pl-6 font-bold text-3xl">Cadastror de Livros</h2>
+        <h2 className="titulo">Cadastror de Livros</h2>
         <form
           className="flex flex-col w-[20rem] space-y-2  rounded-xl"
           onSubmit={enviar}
         >
-          <label htmlFor="">Nome do livro:</label>
-          <input
-            id="nome"
-            className="bg-[#e3dede] rounded-lg p-2 "
-            type="text"
-            placeholder="Nome"
-          />
-          <label htmlFor="">Escritor do Livro:</label>
-          <input
-            id="escritor"
-            className="bg-[#e3dede] rounded-lg p-2 "
-            type="text"
-            placeholder="Escritor"
-          />
-          <label htmlFor="">Ano do Livro:</label>
-          <input
-            id="ano"
-            className="bg-[#e3dede] rounded-lg p-2 "
-            type="number"
-            placeholder="Ano"
-          />
-          <label htmlFor="">Genero do Livro:</label>
-          <input
-            id="genero"
-            className="bg-[#e3dede] rounded-lg p-2 "
-            type="text"
-            placeholder="Genero"
-          />
-          <label htmlFor="">Paginas do Livro:</label>
-          <input
-            id="pagina"
-            className="bg-[#e3dede] rounded-lg p-2 "
-            type="number"
-            placeholder="Paginas"
-          />
+          <label className="subTitulo" htmlFor="">
+            Nome do livro:
+          </label>
+          <input id="nome" type="text" placeholder="Nome" />
+          <label className="subTitulo" htmlFor="">
+            Escritor do Livro:
+          </label>
+          <input id="escritor" type="text" placeholder="Escritor" />
+          <label className="subTitulo" htmlFor="">
+            Ano do Livro:
+          </label>
+          <input id="ano" type="number" placeholder="Ano" />
+          <label className="subTitulo" htmlFor="">
+            Genero do Livro:
+          </label>
+          <input id="genero" type="text" placeholder="Genero" />
+          <label className="subTitulo" htmlFor="">
+            Paginas do Livro:
+          </label>
+          <input id="pagina" type="number" placeholder="Paginas" />
           <button className="button " type="submit">
             Cadastrar
           </button>

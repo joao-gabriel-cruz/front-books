@@ -1,8 +1,8 @@
+import { useEffect, useState } from 'react';
+import AtualizarLivros from './components/atualizarLivros';
 import BuscarLivros from './components/buscarLivros';
 import CadastrarLivro from './components/cadastrarLivro';
-import { useEffect, useState } from 'react';
 import './transição.css';
-import AtualizarLivros from './components/atualizarLivros';
 
 function Books() {
   const [data, setData] = useState();
@@ -48,15 +48,15 @@ function Books() {
 
   return (
     <div className="flex flex-col bg ">
-      <header className="flex w-screen h-[2rem] justify-around items-center">
+      <header className="flex w-screen h-[2rem] mt-2 justify-around items-center">
         <div>
-          <h1 className="font-bold text-2xl">Meus livros</h1>
+          <h1 className="titulo">Meus livros</h1>
         </div>
         <div>
           <nav className="flex space-x-5 ">
             <ul>
               <button
-                className="ease-in duration-300 hover:underline underline-offset-8 hover:text-[#0de02c] "
+                className="ease-in duration-300 hover:underline underline-offset-8 hover:text-[#00b7ff] "
                 onClick={showBusca}
                 id="navBusca"
               >
@@ -66,7 +66,7 @@ function Books() {
             <ul>
               <button
                 id="navAtualizar"
-                className="ease-in duration-300 hover:underline underline-offset-8 hover:text-[#0de02c] "
+                className="ease-in duration-300 hover:underline underline-offset-8 hover:text-[#00b7ff] marcador "
                 onClick={showAtualizar}
               >
                 Atualizar Livro
@@ -91,7 +91,7 @@ function Books() {
           </div>
         </div>
         <div className="w-[50%] h-screen flex items-center justify-center ">
-          <div className="">
+          <div>
             <CadastrarLivro />
           </div>
         </div>

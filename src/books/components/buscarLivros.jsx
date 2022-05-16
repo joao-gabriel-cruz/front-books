@@ -26,10 +26,9 @@ function BuscarLivros({ data }) {
   return (
     <div className="flex flex-col space-y-2 ">
       <div className="flex flex-col ">
-        <label className="font-bold text-2xl">Procure o seu Livro</label>
+        <label className="titulo">Procure o seu Livro</label>
         <input
           id="livro"
-          className="bg-[#e3dede] w-[15rem] rounded-lg p-2 "
           type="text"
           placeholder="nome do livro"
           onChange={procurarLivro}
@@ -41,10 +40,7 @@ function BuscarLivros({ data }) {
           {livros.map((item) => (
             <li key={item.nome} className="font-semibold">
               Livro:{' '}
-              <button
-                onClick={() => detalhes(item.nome)}
-                className="text-[#fc6868]"
-              >
+              <button onClick={() => detalhes(item.nome)} className="subTitulo">
                 {item.nome}
               </button>
             </li>

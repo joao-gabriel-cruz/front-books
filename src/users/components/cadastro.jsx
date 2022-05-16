@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 function Cadastrar() {
   function enviar(event) {
     event.preventDefault();
@@ -22,21 +24,15 @@ function Cadastrar() {
       <main>
         <section>
           <div className="login w-[25rem] h-[30rem] flex justify-evenly items-center flex-col  ">
-            <h2 className="titulo">Cadastro de usuário</h2>
+            <h2 className="text-2xl font-bold">Cadastro de usuário</h2>
             <form className="flex flex-col space-y-3" onSubmit={enviar}>
               <div className="box-input">
                 <label htmlFor="">nome: </label>
-                <input
-                  className="input"
-                  id="nome"
-                  type="text"
-                  placeholder="Digite seu nome"
-                />
+                <input id="nome" type="text" placeholder="Digite seu nome" />
               </div>
               <div className="box-input">
                 <label htmlFor="">senha: </label>
                 <input
-                  className="input"
                   id="senha"
                   type="password"
                   placeholder="Digite sua senha"
@@ -44,16 +40,15 @@ function Cadastrar() {
               </div>
               <div className="box-input">
                 <label htmlFor="">cpf: </label>
-                <input
-                  className="input"
-                  id="cpf"
-                  type="text"
-                  placeholder="Digite seu cpf "
-                />
+                <input id="cpf" type="text" placeholder="Digite seu cpf " />
               </div>
               <button className="button" type="submit">
                 Enviar
               </button>
+              <Link className="" to="/">
+                {' '}
+                Fazer Login{' '}
+              </Link>
             </form>
           </div>
         </section>
